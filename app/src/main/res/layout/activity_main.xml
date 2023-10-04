@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI calculator"
+        android:textColor="#11132c"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_marginBottom="250dp">
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/malecatrd"
+           android:layout_weight="1"
+           android:layout_margin="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:src="@drawable/male"
+                  ></ImageView>
+              <TextView
+                  android:textSize="30dp"
+                  android:textStyle="bold"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Male"></TextView>
+
+          </LinearLayout>
+
+
+       </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/femalecard"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ic_baseline_female_24"
+                    ></ImageView>
+                <TextView
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"></TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        ></LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

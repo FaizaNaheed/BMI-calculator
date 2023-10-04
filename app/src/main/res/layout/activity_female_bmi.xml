@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FemaleBMI"
+    android:orientation="vertical"
+    android:background="#11132c">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Female BMI calculator"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#181935"
+        android:textColor="@color/white"
+        android:hint="Enter your height"
+        android:textColorHint="#afb2bb"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:padding="10dp"></EditText>
+
+    <EditText
+        android:id="@+id/w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#181935"
+        android:hint="Enter your weight"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#afb2bb"
+        android:textSize="30dp"></EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calulate"
+        android:onClick="CalculateBMI"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="calculate"
+        android:background="#313880"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#181935"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
